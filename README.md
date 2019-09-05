@@ -1,5 +1,5 @@
 # gulp-gwd-tasks
-Renaming pubished GWD files and packaging them for RedTrax CMS.
+Renaming published GWD files and packaging them for RedTrax CMS.
 
 ## Dependencies
 **npm**
@@ -27,14 +27,14 @@ Place each GWD banner in a folder named with it's Redtrax name inside the `src` 
 Renames the pubplished `index.html` to the src project folder name
 
 **`zip`**\
-Runs build 1st and then packages the published banner into a `_final.zip` and the src files into the `_source.zip`
+Runs build 1st and then packages the published banner into a `_final.zip` and the source files into the `_source.zip`
 
 ## Usage
-To rename the published banners from *index.html* to the given RedTrax name:
+To rename the published banners from `index.html` to the given RedTrax name:
 ```javascript
 gulp
 ```
-To rename the files and create the RedTrax _final and _source zips:
+To rename the files and create the RedTrax `_final` and `_source` zips:
 ```javascript
 gulp zip
 ```
