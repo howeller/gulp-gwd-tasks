@@ -18,9 +18,9 @@ const srcPath = './src',
 const build = gulp.series(renameHtml, clean);
 const zipper = gulp.series(renameHtml, clean, zipFiles);
 
-gulp.task('default', build);
+gulp.task('default', zipper);
 gulp.task('zip', zipper);
-
+gulp.task('rename', build);
 
 /* 
 	Renames index to the folder name 
