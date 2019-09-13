@@ -36,9 +36,9 @@ gulp rename
 ```
 To rename the files and create the RedTrax `_final` and `_source` zips:
 ```cli
-gulp
+gulp zip
 ```
 or
 ```cli
-gulp zip
+gulp
 ```
