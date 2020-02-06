@@ -20,6 +20,7 @@ fsUtils.js
 ```
 
 ## Setup
+In Terminal navigate to the root of your project folder and run `npm install` to download all of the npm packages to your project.
 Place each GWD banner in a folder named with it's Redtrax name inside the `src` directory. Set that banner to publish into the `dist` directory. Publishing will make a folder with a duplicate name inside `dist`
 
 ## Tasks
