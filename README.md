@@ -1,26 +1,8 @@
 # gulp-gwd-tasks
 Renaming published GWD files and packaging them for RedTrax CMS.
 
-## Dependencies
-**npm**
-
-```cli
-del
-merge-stream
-path
-gulp
-gulp-rename
-gulp-zip
-vinyl-paths
-```
-
-**Custom utility**
-```cli
-fsUtils.js
-```
-
 ## Setup
-1) Clone this repo  or copy `gulpfile.js`,`package.json` and `package-lock.json` to the root of your project folder.
+1) Clone this repo or copy all contents to the root of your project folder.
 
 2) In Terminal - navigate to your project folder and run `npm install` to download all of the npm packages.
 
@@ -45,4 +27,22 @@ gulp zip
 or
 ```cli
 gulp
+```
+
+## Dependencies
+**npm**
+
+```cli
+del
+merge-stream
+path
+gulp
+gulp-rename
+gulp-zip
+vinyl-paths
+```
+
+**Custom utility**
+```cli
+fsUtils.js
 ```
