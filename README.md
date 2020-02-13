@@ -2,11 +2,13 @@
 Renaming published GWD files and packaging them for RedTrax CMS.
 
 ## Setup
-1) Clone this repo or copy all contents to the root of your project folder.
+1) You will need to have [NodeJs](https://nodejs.org/en/), & [Gulp](https://www.npmjs.com/package/gulp) installed globally. Follow the [Quick Start guide](https://gulpjs.com/docs/en/getting-started/quick-start) to get setup. 
 
-2) In Terminal - navigate to your project folder and run `npm install` to download all of the npm packages.
+2) Clone this repo or copy all contents to the root of your project folder.
 
-3) Place each GWD banner in a folder named with it's Redtrax name inside the `src` directory. Set that banner to publish into the `dist` directory. Publishing will make a folder with a duplicate name inside `dist`
+3) In Terminal - navigate to your project folder and run `npm install` to download all of the npm packages.
+
+4) Place each GWD banner in a folder named with it's Redtrax name inside the `src` directory. Set that banner to publish into the `dist` directory. Publishing will make a folder with a duplicate name inside `dist`
 
 ## Tasks
 **`rename`**\
