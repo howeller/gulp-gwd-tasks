@@ -1,6 +1,10 @@
 # gulp-gwd-tasks
 Renaming published GWD files and packaging them for RedTrax CMS.
 
+## Dependencies
+- [**NodeJs** - latest stable release](https://nodejs.org/en/)
+- [**gulp** ~v.4.0.0](https://www.npmjs.com/package/gulp)
+
 ## Setup
 1) You will need to have [NodeJs](https://nodejs.org/en/), & [Gulp](https://www.npmjs.com/package/gulp) installed globally. Follow the [Quick Start guide](https://gulpjs.com/docs/en/getting-started/quick-start) to get setup. 
 
@@ -10,6 +14,20 @@ Renaming published GWD files and packaging them for RedTrax CMS.
 
 4) Place each GWD banner in a folder named with it's Redtrax name inside the `src` directory. Set that banner to publish into the `dist` directory. Publishing will make a folder with a duplicate name inside `dist`
 
+Your directory structure should look like this.
+
+```cli
+├── gulpfile.js
+├── package.json
+├── node_modules
+├── dist
+│   └── zips
+├── lib
+│   └── fsUtils.js
+└── src
+    └── gwd_banner_300x250
+        └── gwd_banner_300x250.html
+```
 ## Tasks
 **`rename`**\
 Renames the published `index.html` to the src project folder name
@@ -31,20 +49,3 @@ or
 gulp
 ```
 
-## Dependencies
-**npm**
-
-```cli
-del
-merge-stream
-path
-gulp
-gulp-rename
-gulp-zip
-vinyl-paths
-```
-
-**Custom utility**
-```cli
-fsUtils.js
-```

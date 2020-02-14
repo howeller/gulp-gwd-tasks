@@ -10,9 +10,15 @@ const del = require('del'),
 // Custom modules & config
 const util = require('./lib/fsUtils');
 
-const srcPath = './src',
-			distPath = './dist',
-			srcFolders = util.getFolders(srcPath);
+const dir = {
+	src:'./src',
+	dist:'./dist'
+}
+
+const srcFolders = util.getFolders(dir.src);
+// const srcPath = './src',
+// 			distPath = './dist',
+// 			srcFolders = util.getFolders(srcPath);
 
 // Gulp Tasks
 const build = gulp.series(renameHtml);
@@ -25,9 +31,9 @@ gulp.task('default', zipper);
 /* 
 	Renames index to the folder name 
 */
-function renameHtml(){
+function renameHtml(cb){
 	let task = srcFolders.map(function(folder) {
-		let _dist = path.join(distPath, folder);
+		let _dist = path.join(dir.dist, folder);
 
 		let _rename = gulp.src(_dist+'/index.html', { allowEmpty:true })
 			.pipe(rename(folder+'.html'))
@@ -44,11 +50,11 @@ function renameHtml(){
 /* 
 	Packages everything into respective zip files and places a copy of the HTML file into zips folder for easy uploading to RT 
 */
-function zipFiles() {
+function zipFiles(cb) {
 	let task = srcFolders.map(function(folder) {
-		let _src = path.join(srcPath, folder),// Path source files
-				_dist = path.join(distPath, folder),// Path to production files
-				_dest = distPath+'/zips';
+		let _src = path.join(dir.src, folder),// Path source files
+				_dist = path.join(dir.dist, folder),// Path to production files
+				_dest = dir.dist+'/zips';
 
 		let _final = gulp.src([_dist+'/**/*'],{base:_dist})
 			.pipe(zip('_final.zip'))

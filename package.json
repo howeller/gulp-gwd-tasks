@@ -1,6 +1,6 @@
 {
   "name": "gwdbanners",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Gulp setup for renaming and zipping banners made with GWD",
   "main": "gulpfile.js",
   "scripts": {
@@ -9,6 +9,7 @@
   "author": "howeller",
   "license": "ISC",
   "devDependencies": {
+    "fs": "0.0.1-security",
     "del": "^5.1.0",
     "gulp": "^4.0.2",
     "gulp-rename": "^1.4.0",
