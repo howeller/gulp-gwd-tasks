@@ -21,6 +21,8 @@ Your directory structure should look like this.
 ├── package.json
 ├── node_modules
 ├── dist
+│   ├── gwd_banner_300x250
+│   │   └── index.html
 │   └── zips
 ├── lib
 │   └── fsUtils.js
